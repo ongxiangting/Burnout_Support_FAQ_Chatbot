@@ -1,0 +1,755 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Is anyone there?",
+        "Hey there",
+        "Hi there",
+        "Yo",
+        "Hiya",
+        "Greetings"
+      ],
+      "responses": [
+        "Hey, I'm glad you're here. I'm here to listen and help you understand and manage burnout — what's on your mind today?",
+        "Hi there. However you're doing today, I'm ready to listen. What would you like to talk about?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "I have to go",
+        "Talk to you later",
+        "Thanks bye",
+        "Gotta go",
+        "I'll talk to you soon",
+        "See ya"
+      ],
+      "responses": [
+        "Take care of yourself, okay? Remember, it's okay to ask for help when you need it. I'm here whenever you want to talk again.",
+        "Goodbye for now. Be gentle with yourself — come back anytime you want to talk about how you're feeling."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That helps",
+        "Thanks a lot",
+        "Appreciate it",
+        "Thanks for listening",
+        "That was helpful, thank you"
+      ],
+      "responses": [
+        "You're very welcome. I'm really glad that helped.",
+        "Anytime. Taking the time to check in on yourself like this matters."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you?",
+        "How are you doing?",
+        "How's it going?",
+        "You okay?",
+        "How have you been?",
+        "What's up with you?",
+        "How's your day?"
+      ],
+      "responses": [
+        "I'm just a program so I don't get burned out myself, but thanks for asking — that's kind of you. I'm more curious how *you're* doing today?"
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "What is your name?",
+        "Do you have a name?",
+        "What should I call you?",
+        "Who am I talking to?",
+        "What do I call this bot?",
+        "Does this chatbot have a name?",
+        "Introduce yourself",
+        "Can you tell me your name?"
+      ],
+      "responses": [
+        "You can call me the Burnout Support Bot. I'm here to listen and help you learn more about burnout, whenever you need it."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "Who are you?",
+        "What can you do?",
+        "What is this chatbot?",
+        "Are you a real person?",
+        "What are you?",
+        "Tell me about yourself",
+        "What kind of bot are you?",
+        "What is your purpose?"
+      ],
+      "responses": [
+        "I'm a chatbot here to support you around burnout — I'm not a real person or a therapist, but I can listen, share reliable information, and point you toward help when you need more than I can offer. What's going on for you?"
+      ]
+    },
+    {
+      "tag": "venting",
+      "patterns": [
+        "I'm so stressed",
+        "I can't handle this anymore",
+        "I'm exhausted",
+        "This is too much for me",
+        "I feel overwhelmed",
+        "I'm really struggling right now",
+        "Everything feels like too much",
+        "I'm tired of everything",
+        "I just need to vent",
+        "Work is killing me",
+        "I feel like I'm drowning",
+        "I don't know how much more I can take",
+        "My boss scolded me",
+        "My boss is angry at me",
+        "I got yelled at by my boss",
+        "I feel so lonely",
+        "I feel alone",
+        "I don't know why I feel so sad",
+        "Yes I get angry from my boss",
+        "I already told you how I feel",
+        "I feel angry and sad",
+        "I feel down",
+        "I feel empty",
+        "I don't have anyone",
+        "I feel stuck"
+      ],
+      "responses": [
+        "That sounds really heavy to be carrying. I'm glad you said something — you don't have to hold it in. Do you want to tell me a bit more about what's been going on, or would it help to look at a few things that might ease it right now?",
+        "I hear you, and that sounds exhausting. It makes sense you'd feel that way if this has been building up. What's been the hardest part lately?",
+        "That's a lot to be dealing with. Thank you for sharing it with me — I'm listening. What do you feel like you need most right now, someone to listen or some practical ideas?",
+        "It sounds like things have really piled up on you. That's genuinely hard. Take your time — I'm here."
+      ]
+    },
+    {
+      "tag": "burnout_definition",
+      "patterns": [
+        "What is burnout?",
+        "Can you explain burnout?",
+        "Define burnout",
+        "What does burnout mean?",
+        "I keep hearing about burnout, what is it?",
+        "What is workplace burnout?",
+        "Explain what burnout is",
+        "Give me a definition of burnout",
+        "What exactly is burnout",
+        "Can you describe burnout"
+      ],
+      "responses": [
+        "Good question — burnout is more than just being tired. The World Health Organization describes it as a syndrome from chronic workplace stress that hasn't been successfully managed, showing up as energy depletion, feeling mentally distant from your job, and reduced effectiveness. Does that sound like something you've been feeling?"
+      ]
+    },
+    {
+      "tag": "burnout_symptoms",
+      "patterns": [
+        "What are the symptoms of burnout?",
+        "How do I know if I'm burned out?",
+        "Signs of burnout",
+        "What does burnout feel like?",
+        "Am I experiencing burnout?",
+        "How can I tell if I have burnout?",
+        "What are common burnout signs?",
+        "How do I recognise burnout in myself",
+        "What are the warning signs of burnout",
+        "List some burnout symptoms"
+      ],
+      "responses": [
+        "That's a really important thing to check in on. Common signs include feeling emotionally drained, becoming more cynical or detached from your work, trouble concentrating, sleep issues, and irritability. Do any of these feel familiar to what you've been going through?"
+      ]
+    },
+    {
+      "tag": "burnout_causes",
+      "patterns": [
+        "What causes burnout?",
+        "Why do people get burned out?",
+        "What leads to burnout?",
+        "Causes of workplace burnout",
+        "What are the risk factors for burnout?",
+        "Why am I feeling burned out?",
+        "What triggers burnout",
+        "What contributes to burnout",
+        "What's behind burnout",
+        "Why does burnout happen"
+      ],
+      "responses": [
+        "It's rarely just one thing. Research points to excessive workload, long hours, poor work-life balance, lack of support, and ineffective leadership as common causes — especially when stress builds up with little time to recover. Does any of that resonate with your situation?"
+      ]
+    },
+    {
+      "tag": "burnout_vs_stress",
+      "patterns": [
+        "Is burnout the same as stress?",
+        "What's the difference between stress and burnout?",
+        "How is burnout different from being stressed?",
+        "Stress vs burnout",
+        "Isn't burnout just stress?",
+        "How do you tell stress and burnout apart",
+        "Is being stressed the same as being burned out",
+        "Difference between stressed and burned out"
+      ],
+      "responses": [
+        "Great question, people mix these up a lot. Stress is usually about feeling overwhelmed by pressure that can ease once things calm down. Burnout is more of a long-term state from stress that's gone unmanaged for a while — it includes exhaustion, cynicism, and reduced effectiveness that doesn't just lift after a weekend off."
+      ]
+    },
+    {
+      "tag": "burnout_stages",
+      "patterns": [
+        "What are the stages of burnout?",
+        "How does burnout progress?",
+        "Does burnout happen gradually?",
+        "Phases of burnout",
+        "How does burnout develop over time",
+        "Are there levels of burnout",
+        "Does burnout get worse over time",
+        "What's the progression of burnout"
+      ],
+      "responses": [
+        "It usually creeps up gradually rather than hitting all at once — often starting with overwork and high drive, moving into chronic stress and lower satisfaction, then emotional exhaustion and detachment, and eventually full burnout if it's not addressed. The good news is catching it early makes a real difference."
+      ]
+    },
+    {
+      "tag": "self_help_strategies",
+      "patterns": [
+        "How can I manage burnout?",
+        "What can I do about burnout?",
+        "How do I recover from burnout?",
+        "Tips to reduce burnout",
+        "How can I cope with stress at work?",
+        "What self-care strategies help with burnout?",
+        "How to prevent burnout?",
+        "What are some coping strategies",
+        "How do I deal with burnout",
+        "Any tips for managing burnout"
+      ],
+      "responses": [
+        "There's no single fix, but a few things tend to help: mindfulness, regular movement, enough sleep, setting boundaries at work, taking real breaks, and keeping communication open with your team. Want me to go deeper into any one of these?"
+      ]
+    },
+    {
+      "tag": "mindfulness_detail",
+      "patterns": [
+        "mindfulness",
+        "tell me about mindfulness",
+        "how do I practice mindfulness",
+        "more about mindfulness",
+        "what is mindfulness",
+        "how does mindfulness help",
+        "mindfulness practice",
+        "can you explain mindfulness more"
+      ],
+      "responses": [
+        "Mindfulness means gently focusing on the present moment instead of getting swept up in worries about work or the future. A simple way to start: spend 5 minutes just noticing your breath, or your surroundings, without trying to change anything. Apps or short guided audio can help if you're new to it."
+      ]
+    },
+    {
+      "tag": "exercise_detail",
+      "patterns": [
+        "exercise",
+        "regular movement",
+        "tell me about exercise",
+        "physical activity",
+        "movement",
+        "how does exercise help with burnout",
+        "what kind of exercise helps",
+        "tell me more about movement"
+      ],
+      "responses": [
+        "Regular movement doesn't need to mean an intense workout — even a 20-30 minute walk most days can lower stress hormones and improve your mood. The key is consistency over intensity, so pick something you'll actually keep doing."
+      ]
+    },
+    {
+      "tag": "boundaries_detail",
+      "patterns": [
+        "boundaries",
+        "setting boundaries",
+        "tell me about boundaries",
+        "how to set boundaries at work",
+        "work boundaries",
+        "how do I set limits at work",
+        "tell me more about boundaries",
+        "how can I protect my time"
+      ],
+      "responses": [
+        "Setting boundaries could mean deciding on a firm time you stop checking emails, saying no to tasks outside your capacity, or blocking focus time on your calendar. It helps to communicate these boundaries clearly rather than assuming others will guess them."
+      ]
+    },
+    {
+      "tag": "breaks_detail",
+      "patterns": [
+        "breaks",
+        "taking breaks",
+        "tell me about breaks",
+        "how to take breaks",
+        "rest breaks",
+        "why are breaks important",
+        "tell me more about taking breaks",
+        "how often should I take breaks"
+      ],
+      "responses": [
+        "Short, regular breaks — even 5-10 minutes every hour or two — can prevent the kind of mental fatigue that builds into burnout. Stepping away from your screen, stretching, or getting some fresh air works better than pushing through non-stop."
+      ]
+    },
+    {
+      "tag": "communication_detail",
+      "patterns": [
+        "communication",
+        "team communication",
+        "tell me about communication",
+        "keeping communication open",
+        "talking to my team",
+        "how does communication help with burnout",
+        "tell me more about team communication",
+        "why is communication important at work"
+      ],
+      "responses": [
+        "Keeping communication open means letting your team or manager know early when your workload feels unmanageable, rather than waiting until you're overwhelmed. Regular check-ins, even brief ones, can help catch issues before they build up."
+      ]
+    },
+    {
+      "tag": "early_detection",
+      "patterns": [
+        "How can I catch burnout early?",
+        "What are early warning signs of burnout?",
+        "How to detect burnout before it gets worse?",
+        "Early symptoms of burnout",
+        "How do I notice burnout before it's serious",
+        "What should I watch out for early on",
+        "Can burnout be caught early",
+        "Signs to watch for before burnout gets bad"
+      ],
+      "responses": [
+        "Catching it early really does help. Watch for things like persistent tiredness, dropping motivation, and creeping irritability — noticing these and adjusting early, like easing your workload or reaching out for support, can stop it from getting more serious."
+      ]
+    },
+    {
+      "tag": "work_life_balance",
+      "patterns": [
+        "How do I improve my work-life balance?",
+        "How can I balance work and personal life?",
+        "Tips for work-life balance",
+        "How to stop work from taking over my life?",
+        "How do I separate work and home life",
+        "My work is taking over my personal life",
+        "How can I protect my personal time",
+        "Any advice for work-life balance"
+      ],
+      "responses": [
+        "That balance is tough to protect, but worth it. Try setting clear boundaries on work hours, stepping away from emails after hours, scheduling real personal time, and telling your team what your limits are. What does your current routine look like?"
+      ]
+    },
+    {
+      "tag": "talking_to_manager",
+      "patterns": [
+        "How do I talk to my manager about burnout?",
+        "Should I tell my boss I'm burned out?",
+        "How to bring up burnout at work?",
+        "Talking to my supervisor about stress",
+        "How do I approach my manager about my workload",
+        "Should I be honest with my boss about burnout",
+        "How to ask my manager for support",
+        "I'm scared to tell my boss I'm struggling"
+      ],
+      "responses": [
+        "That can feel intimidating, but it's often worth it. It can help to bring specific examples of how your workload is affecting you, focus the conversation on possible solutions, and ask for a private, calm moment to talk. Organisational support genuinely makes a difference in reducing burnout."
+      ]
+    },
+    {
+      "tag": "student_burnout",
+      "patterns": [
+        "Can students get burnout?",
+        "Is burnout only for workers?",
+        "Do students experience burnout too?",
+        "Academic burnout",
+        "Can university students get burned out",
+        "Is burnout a thing for students",
+        "I'm a student and I feel burned out",
+        "Does school cause burnout"
+      ],
+      "responses": [
+        "Yes, definitely — burnout isn't just a workplace thing. Students can experience it too, from ongoing academic pressure, heavy workloads, and a poor study-life balance, and it can look a lot like exhaustion, detachment, and losing motivation for schoolwork."
+      ]
+    },
+    {
+      "tag": "remote_work_burnout",
+      "patterns": [
+        "Does remote work cause burnout?",
+        "Can working from home lead to burnout?",
+        "Is burnout worse when working remotely?",
+        "Remote work and burnout",
+        "I work from home and feel burned out",
+        "Does working from home make burnout worse",
+        "Is WFH linked to burnout",
+        "How does remote work affect burnout"
+      ],
+      "responses": [
+        "Yes, remote work can contribute to burnout, especially when boundaries between work and personal life become blurred, working hours extend informally, and in-person social support is reduced. Setting a clear daily schedule and dedicated workspace can help."
+      ]
+    },
+    {
+      "tag": "burnout_statistics",
+      "patterns": [
+        "How common is burnout?",
+        "How many people experience burnout?",
+        "Is burnout a common problem?",
+        "Burnout statistics",
+        "How widespread is burnout",
+        "What percentage of people experience burnout",
+        "Is burnout common in the workplace",
+        "How prevalent is burnout"
+      ],
+      "responses": [
+        "You're definitely not alone in this — burnout is recognised as a major occupational health concern worldwide, especially in high-stress fields like healthcare, and it's consistently linked to lower job satisfaction and people leaving their jobs."
+      ]
+    },
+    {
+      "tag": "breathing_exercise",
+      "patterns": [
+        "Can you guide me through a breathing exercise?",
+        "Teach me a relaxation technique",
+        "I need to calm down",
+        "Give me a breathing exercise for stress",
+        "Help me relax",
+        "Can you walk me through breathing exercises",
+        "I need a quick way to calm down",
+        "Guide me through deep breathing"
+      ],
+      "responses": [
+        "Sure, let's slow things down together. Breathe in slowly through your nose for 4 seconds, hold for 4, then breathe out slowly through your mouth for 6 seconds. Repeat that 4 or 5 times. Take your time — how do you feel?"
+      ]
+    },
+    {
+      "tag": "time_management_tips",
+      "patterns": [
+        "How can I manage my time better?",
+        "Tips for managing my workload",
+        "How to prioritise tasks?",
+        "I have too much to do, help",
+        "How do I organise my tasks better",
+        "I can't keep up with my workload",
+        "Any advice for time management",
+        "How do I stop feeling behind on everything"
+      ],
+      "responses": [
+        "That feeling of too much at once is draining. Try breaking tasks into smaller steps, tackling the most important ones first, keeping a simple to-do list, and building in short breaks between tasks rather than multitasking straight through."
+      ]
+    },
+    {
+      "tag": "sleep_tips",
+      "patterns": [
+        "How can I sleep better?",
+        "I have trouble sleeping because of stress",
+        "Tips for better sleep",
+        "How to improve sleep quality?",
+        "sleep",
+        "I can't sleep because of work stress",
+        "How do I fix my sleep schedule",
+        "Any advice for better sleep",
+        "I keep waking up at night from stress"
+      ],
+      "responses": [
+        "Stress and bad sleep tend to feed each other, so this is worth tackling. Try a consistent sleep schedule, less screen time before bed, cutting back caffeine in the afternoon, and a calming wind-down routine. Good sleep really is one of the bigger levers for recovering from burnout."
+      ]
+    },
+    {
+      "tag": "seek_professional_help",
+      "patterns": [
+        "When should I see a professional?",
+        "Should I talk to a therapist?",
+        "Do I need to see a doctor for burnout?",
+        "When is burnout serious enough for help?",
+        "Where can I get professional help?",
+        "Should I see a counsellor?",
+        "I think I'm depressed",
+        "I have depression",
+        "I think I might be depressed",
+        "I can't take it anymore",
+        "How do I find a therapist",
+        "Is it time to get professional help"
+      ],
+      "responses": [
+        "If what you're feeling is severe, sticking around, or getting in the way of daily life, it's worth reaching out to a doctor, counsellor, or mental health professional — that's not a sign of failure, it's a smart step. I can share information, but I'm not a substitute for that kind of support."
+      ]
+    },
+    {
+      "tag": "crisis_support",
+      "patterns": [
+        "I can't cope anymore",
+        "I feel hopeless",
+        "I don't want to go on like this",
+        "I feel like giving up",
+        "I'm at my breaking point",
+        "I don't see the point anymore",
+        "I feel completely defeated",
+        "I have nothing left in me",
+        "I don't know how to keep going"
+      ],
+      "responses": [
+        "I'm really sorry you're feeling this way, and I'm glad you told me. I'm not able to give you the level of support you need right now, but please reach out to a mental health professional or a crisis helpline in your area as soon as you can — you don't have to go through this alone."
+      ]
+    },
+    {
+      "tag": "crisis_self_harm",
+      "patterns": [
+        "I wanna die",
+        "I want to die",
+        "I want to end my life",
+        "I want to kill myself",
+        "I don't want to live anymore",
+        "I want to end it all",
+        "I want to hurt myself",
+        "I'm thinking about suicide",
+        "I feel like ending it",
+        "I don't want to be alive anymore",
+        "I've been thinking about hurting myself"
+      ],
+      "responses": [
+        "I'm really sorry you're going through this. Your safety is important. I’m not able to provide crisis counselling, but please seek immediate support from someone you trust or a qualified mental health professional. If you think you may hurt yourself or are in immediate danger, contact your local emergency service or go to the nearest emergency department."
+      ]
+    },
+    {
+      "tag": "crisis_harm_others",
+      "patterns": [
+        "I want to kill him",
+        "I want to kill her",
+        "I want to kill them",
+        "I want to hurt someone",
+        "I want to hurt him",
+        "I want to hurt her",
+        "I feel like attacking someone",
+        "I want to kill my boss",
+        "I feel like I could hurt someone",
+        "I want to hurt my coworker",
+        "I feel like lashing out violently"
+      ],
+      "responses": [
+        "It sounds like you may be experiencing very intense emotions. I can't help with harming another person. Please move away from anyone you might hurt, avoid weapons or other dangerous objects, and seek immediate help from emergency services or a qualified professional."
+      ]
+    },
+    {
+      "tag": "crisis_passive_ideation",
+      "patterns": [
+        "I just want to sleep until I don't wake up",
+        "I wish I wouldn't wake up",
+        "I want to go to sleep and never wake up",
+        "I don't want to wake up tomorrow",
+        "I just want to sleep forever",
+        "I wish I could just not wake up",
+        "I hope I don't wake up in the morning",
+        "Part of me hopes I just don't wake up",
+        "I wouldn't mind if I didn't wake up",
+        "I keep wishing I wouldn't wake up"
+      ],
+      "responses": [
+        "It sounds like you're going through a very difficult time. Thoughts about not wanting to wake up can be a sign that you need immediate support. Please reach out to someone you trust and a qualified mental health professional. If you feel you may hurt yourself or are in immediate danger, seek emergency help now."
+      ]
+    },
+    {
+      "tag": "low_self_worth",
+      "patterns": [
+        "I feel so worthless",
+        "No one likes me",
+        "I can't do anything right",
+        "I am so useless",
+        "Nothing makes sense anymore",
+        "I feel like a failure",
+        "I feel like I'm not good enough",
+        "I feel like I let everyone down",
+        "I don't feel good enough for this job"
+      ],
+      "responses": [
+        "That's a painful way to feel, and I don't take it lightly. Burnout can really distort how we see ourselves and our own worth — it's not always an accurate reflection of reality. What's been making you feel this way lately?"
+      ]
+    },
+    {
+      "tag": "anxious",
+      "patterns": [
+        "I feel so anxious",
+        "I'm anxious about this",
+        "I feel nervous and on edge",
+        "I can't stop worrying",
+        "I feel panicky",
+        "My mind won't stop racing",
+        "I feel jittery and on edge",
+        "I'm anxious about work all the time"
+      ],
+      "responses": [
+        "That sounds uncomfortable to sit with. When anxiety creeps in like that, grounding yourself in the present moment can help — want me to walk you through a quick breathing exercise, or would you rather talk through what's on your mind?"
+      ]
+    },
+    {
+      "tag": "reluctant_to_share",
+      "patterns": [
+        "I don't want to talk about it",
+        "I can't bring myself to open up",
+        "I'd rather not say",
+        "Just leave me alone",
+        "I don't feel like talking right now",
+        "I'm not ready to talk about this",
+        "Can we not talk about this right now",
+        "I don't really want to get into it"
+      ],
+      "responses": [
+        "That's completely okay — you don't owe me an explanation. I'm here whenever you feel ready, and there's no pressure either way."
+      ]
+    },
+    {
+      "tag": "bot_limitation",
+      "patterns": [
+        "You don't understand me",
+        "You're just a robot, how would you know",
+        "You can't possibly know what I'm going through",
+        "Nobody understands me",
+        "You're not a real person so you don't get it",
+        "How could an AI understand this",
+        "You don't really get what I'm feeling",
+        "You're just a program, this isn't real help"
+      ],
+      "responses": [
+        "You're right, I can't fully understand from lived experience the way another person could — that's a fair thing to point out. What I can do is listen without judgment and help you think things through. And for a lot of this, talking to someone who knows you personally, or a professional, is genuinely worth doing alongside chatting with me."
+      ]
+    },
+    {
+      "tag": "casual_ack",
+      "patterns": [
+        "ok",
+        "okay",
+        "yes",
+        "no",
+        "nice",
+        "sure",
+        "fine",
+        "not really",
+        "whatever",
+        "hmm",
+        "alright",
+        "I guess"
+      ],
+      "responses": [
+        "I'm listening — go on, whenever you're ready.",
+        "Take your time. What's on your mind?"
+      ]
+    },
+    {
+      "tag": "conversation_repair",
+      "patterns": [
+        "You already told me that",
+        "You already said that",
+        "Why are you repeating yourself?",
+        "I already told you that",
+        "You just said that",
+        "That doesn't make sense",
+        "Wrong answer",
+        "That's not what I meant",
+        "You're not understanding me",
+        "That's not right",
+        "That's not what I asked",
+        "I don't think that answered my question"
+      ],
+      "responses": [
+        "Sorry about that, thanks for pointing it out. Could you tell me a bit more about what you're looking for, or rephrase it for me?",
+        "My mistake — let's try that again. What would be most helpful to focus on right now?"
+      ]
+    },
+    {
+      "tag": "topic_change",
+      "patterns": [
+        "Can we talk about something else?",
+        "I don't want to talk about this anymore",
+        "Let's change the subject",
+        "Can we move on from this?",
+        "I'd rather talk about something else",
+        "Let's talk about a different topic",
+        "Can we switch topics",
+        "Moving on from that"
+      ],
+      "responses": [
+        "Of course. What would you like to talk about instead — maybe symptoms, self-help strategies, or something else on your mind?"
+      ]
+    },
+    {
+      "tag": "isolation",
+      "patterns": [
+        "I don't have any friends",
+        "I feel so isolated",
+        "I have no one to talk to",
+        "I feel disconnected from people",
+        "I feel really alone in this",
+        "I've been pulling away from everyone",
+        "I don't talk to anyone anymore",
+        "I feel cut off from people"
+      ],
+      "responses": [
+        "That sounds really hard to carry on your own. Feeling isolated can make burnout feel even heavier. Is there anyone in your life, even just one person, you'd feel okay reaching out to?"
+      ]
+    },
+    {
+      "tag": "closing_conversation",
+      "patterns": [
+        "That's all",
+        "I don't have anything more to say",
+        "Nothing else for now",
+        "That's all I wanted to say",
+        "That's all for today",
+        "I think I'm done for now",
+        "That covers it for today",
+        "I'm good for now, thanks"
+      ],
+      "responses": [
+        "Thanks for sharing what you did today. I'm here whenever you want to pick this back up."
+      ]
+    },
+    {
+      "tag": "mental_health_definition",
+      "patterns": [
+        "What is mental health?",
+        "Define mental health",
+        "What does mental health mean?",
+        "Can you explain mental health",
+        "What's included in mental health",
+        "How would you define mental health",
+        "What does good mental health look like",
+        "Tell me about mental health in general"
+      ],
+      "responses": [
+        "Mental health covers our emotional, psychological, and social well-being — it shapes how we think, feel, handle stress, and relate to others. Burnout is one specific way that chronic stress can affect it."
+      ]
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": [
+        "Do you know football?",
+        "What's the weather today?",
+        "Tell me a joke",
+        "What's the capital of France?",
+        "Can you recommend a movie?",
+        "Who won the World Cup?",
+        "Can you help me with my math homework?",
+        "Write my essay for me",
+        "What's 2 plus 2?",
+        "Can you code a website for me?",
+        "What's your favorite food?",
+        "Tell me about the news today"
+      ],
+      "responses": [
+        "That's outside what I'm built for — I'm focused specifically on burnout and stress-related support. I'm happy to help with things like burnout symptoms, causes, coping strategies, or just talking through how you're feeling. What's on your mind about that?",
+        "I'm not really the right bot for that one — my whole focus is burnout and stress support. Is there something about how you've been feeling, or ways to manage burnout, I can help with instead?"
+      ]
+    }
+  ]
+}
