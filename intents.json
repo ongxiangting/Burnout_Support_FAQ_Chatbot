@@ -1,6 +1,6 @@
 import json
 
-intents = {
+{
   "intents": [
     {
       "tag": "greeting",
