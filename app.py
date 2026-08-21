@@ -30,7 +30,7 @@ def load_chatbot_data():
         intents = json.load(f)
     words = pickle.load(open('words.pkl', 'rb'))
     classes = pickle.load(open('classes.pkl', 'rb'))
-    model = load_model('burnout_chatbot_model.h5')
+    model = load_model('burnout_chatbot_model.keras')
     return intents, words, classes, model
 
 intents, words, classes, model = load_chatbot_data()
