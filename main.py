@@ -14,7 +14,7 @@ with open('intents.json', 'r', encoding='utf-8') as f:
 
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('burnout_chatbot_model.h5')
+model = load_model('burnout_chatbot_model.keras')
 
 # Configuration and Thresholds
 ERROR_THRESHOLD = 0.25
